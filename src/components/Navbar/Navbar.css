@@ -22,8 +22,7 @@
 .nav-link:hover,
 .selected {
   color: var(--background) !important;
-  text-decoration: underline;
-  background-color: var(--selected);
+  background-color: green;
   text-decoration-color: var(--background);
   border-radius: var(--border-radius);
   outline: none;
@@ -37,7 +36,7 @@
 }
 
 #logo:hover {
-  color: var(--selected);
+  color: #000;
   letter-spacing: 0.05em;
   transition-duration: 0.2s;
 }

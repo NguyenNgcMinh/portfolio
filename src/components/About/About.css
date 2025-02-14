@@ -3,40 +3,19 @@
   padding-bottom: 30px;
   width: 100%;
 }
-
+#about_me u{
+  text-decoration: none;
+}
+#about_text{
+  padding: 20px 20px;
+  color: var(--text);
+  background-color: #1e22aa;
+}
 #name_and_photo {
   margin-bottom: 20px;
 }
-
-#quote {
-  color: var(--text);
-}
-
-blockquote {
-  margin: 0;
-  margin-bottom: 40px;
-}
-
-blockquote p {
-  padding: 15px;
-  background: var(--quote);
-  border-radius: var(--border-radius);
-  color: black;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-blockquote p::before {
-  content: "\201C";
-}
-
-blockquote p::after {
-  content: "\201D";
-}
-
 #profile_picture {
-  border-radius: 50%;
+  border-radius: 20%;
   height: 150px;
   width: 150px * 1.06;
 }
@@ -85,11 +64,15 @@ blockquote p::after {
 }
 
 #name {
-  color: var(--title);
+  color: #000;
+}
+#title{
+  color: #000;
 }
 
 h3 {
-  color: var(--title);
+  color: #000;
+  text-decoration: none;
 }
 
 .buttons {

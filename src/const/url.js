@@ -1,5 +1,5 @@
 // general
-export const SOURCE_CODE_URL = "https://github.com/Fe-56/portfolio";
+export const SOURCE_CODE_URL = "https://github.com/NguyenNgcMinh/portfolio";
 export const WEBSITE_PATH = "/portfolio/#/";
 export const ABOUT_PATH = "/";
 export const PROJECTS_PATH = "/projects";
@@ -7,14 +7,13 @@ export const SKILLS_PATH = "/skills";
 export const EXPERIENCES_PATH = "/experiences";
 export const HOBBIES_PATH = "/hobbies";
 export const CONTACT_PATH = "/contact";
-export const WEBSITE_PIC = "http://fe-56.github.io/portfolio/favicon.ico?v=2";
+export const WEBSITE_PIC = "./LOGOPRO.png";
 
 // About page
 export const ABOUT_RESUME_URL =
-  "https://drive.google.com/file/d/1ZjgvferujRqInevsND0rBAbGIHijU85T/view?usp=sharing";
-export const ABOUT_GITHUB_URL = "https://github.com/Fe-56";
-export const ABOUT_LINKEDIN_URL = "https://www.linkedin.com/in/limfuoen/";
-
+  "https://drive.google.com/file/d/1ol7JhCdknH3h1-rmzFiLYIiLDSfBvnYe/view?usp=sharing";
+export const ABOUT_GITHUB_URL = "https://github.com/NguyenNgcMinh";
+export const ABOUT_LINKEDIN_URL = "https://www.linkedin.com/in/minh-nguy%E1%BB%85n-ng%E1%BB%8Dc-5a7027344/"
 // Projects page
 export const PROJECTS_DEFUND_PROJECT_URL = "https://de-fund.vercel.app/";
 export const PROJECTS_DEFUND_COURSE_URL =

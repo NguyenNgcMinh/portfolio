@@ -2,7 +2,7 @@ import parse from "html-react-parser";
 import * as urlConst from "./url";
 
 // general
-export const NAME = "Lim Fuo En";
+export const NAME = "Ngoc Minh";
 export const FOOTNOTE = `${NAME}. All Rights Reserved.`;
 export const SOURCE_CODE = "Github Source Code";
 
@@ -16,9 +16,9 @@ export const NAVBAR_CONTACT = "Contact";
 // About page
 export const ABOUT_TITLE = "About";
 export const ABOUT_RESUME_TITLE = "Resume";
-export const ABOUT_MY_TITLE = "Full-Stack Developer";
-export const ABOUT_MY_QUOTE =
-  "I love to build cool apps that bring value to the lives of others!";
+export const ABOUT_MY_TITLE = "Front-End Developer";
+// export const ABOUT_MY_QUOTE =
+//   "I like programming work, it brings me excitement and newnes";
 export const ABOUT_ABOUT =
   "Fuo En was born in Singapore in 1999. Since young, he has an interest in computers and technology, and aspired to have a career that involved technology. He is currently a Computer Science and Design (CSD) Final Year Student at Singapore University of Technology and Design (SUTD).";
 export const ABOUT_RESUME_BUTTON = "My Resume >";
