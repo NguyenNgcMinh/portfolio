@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./Navbar.css";
 import NavbarButton from "./NavbarButton";
 import { getTheme } from "../../Theme";
@@ -43,7 +43,7 @@ export default function Navbar() {
 function initialiseNavbarTheme() {
   const savedTheme = getTheme();
 
-  if (savedTheme == "dark-theme") {
+  if (savedTheme === "dark-theme") {
     document.getElementById("navbar_nav").className =
       "navbar navbar-expand-sm navbar-dark fixed-top";
   } else {

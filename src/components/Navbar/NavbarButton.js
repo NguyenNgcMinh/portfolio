@@ -9,17 +9,19 @@ const NavbarAbout = () => {
     <div id="navbar_logo">
       <a
         href={urlConst.WEBSITE_PATH}
-        class="navbar-brand mb-0 mx-auto"
+        class="navbar-brand mb-0 mx-0"
         id="logo"
         onClick={navbarFunctions.clickedAbout}
       >
-        <img
-          src={urlConst.WEBSITE_PIC}
-          width="30"
-          height="30"
-          class="d-inline-block align-top"
-          id="fe56_logo"
-        />
+       <img
+  src={urlConst.WEBSITE_PIC}
+  width="30"
+  height="30"
+  className="d-inline-block align-top"
+  id="fe56_logo"
+  alt=""
+/>
+
         {textConst.NAME}
       </a>
     </div>
@@ -122,11 +124,15 @@ const NavbarTheme = () => {
 
   return (
     <div id="change_theme">
-      <a
-        id="change_theme_icon"
-        onClick={() => toggleTheme()}
-        class={themeButtonIconClass(theme)}
-      ></a>
+   
+   <button
+  id="change_theme_icon"
+  onClick={toggleTheme}
+  className={themeButtonIconClass(theme)}
+  aria-label="Toggle theme"
+>
+</button>
+
     </div>
   );
 };
@@ -134,7 +140,7 @@ const NavbarTheme = () => {
 function themeButtonIconClass(theme) {
   var iconClass;
 
-  if (theme == "dark-theme") {
+  if (theme === "dark-theme") {
     iconClass = "fa-solid fa-sun fa-lg";
   } else {
     iconClass = "fa-solid fa-moon fa-lg";

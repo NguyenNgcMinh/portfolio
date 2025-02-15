@@ -20,7 +20,7 @@ export const ABOUT_MY_TITLE = "Front-End Developer";
 // export const ABOUT_MY_QUOTE =
 //   "I like programming work, it brings me excitement and newnes";
 export const ABOUT_ABOUT =
-  "Fuo En was born in Singapore in 1999. Since young, he has an interest in computers and technology, and aspired to have a career that involved technology. He is currently a Computer Science and Design (CSD) Final Year Student at Singapore University of Technology and Design (SUTD).";
+  "Nguyen Ngoc Minh, 22 years old, was born in Vietnam. I am a recent graduate of information technology majoring in Front-End developer. Since childhood, I have been passionate about computers, so I studied this field and discovered that this field is very interesting and interesting. It gives me a lot of creativity as well as helps me develop myself";
 export const ABOUT_RESUME_BUTTON = "My Resume >";
 export const ABOUT_FIND_ME_WEB = "Find me on the Web";
 export const ABOUT_GITHUB = "Github";
@@ -103,8 +103,9 @@ export const PROJECTS_GIGLET_ROLE = "Developer";
 export const PROJECTS_GIGLET_PROJECT_TYPE = "School Project";
 export const PROJECTS_GIGLET_TIMELINE = "January 2022 to April 2022";
 export const PROJECTS_GIGLET_PROJECT_DESCRIPTION = parse(
-  `For SUTD's course: <a href=${urlConst.PROJECTS_GIGLET_COURSE_URL} target='_blank'>30.001 Entrepreneurship</a>.\n\nGiglet is our idea for a start-up to showcase our knowledge of entrepreneurship learned from the Entrepreneurship course.\n\nGiglet is a platform that matches STEM undergraduates in South East Asia to companies via gig work, for the companies to \"test the waters\" and see whetehr the students are suitable for an internship or full-time role in their company.\n\nGiglet currently has its first products ready in beta: Giglet Hirer and Giglet Freelancer Telegram Bots.\n\nI designed the entire system architecture of the Telegram bots, and developed the bots from scratch, which included integrating the bot to Google Firestore as its database.`,
+  `For SUTD's course: <a href=${urlConst.PROJECTS_GIGLET_COURSE_URL} target='_blank'>30.001 Entrepreneurship</a>.\n\nGiglet is our idea for a start-up to showcase our knowledge of entrepreneurship learned from the Entrepreneurship course.\n\nGiglet is a platform that matches STEM undergraduates in South East Asia to companies via gig work, for the companies to test the waters and see whether the students are suitable for an internship or full-time role in their company.\n\nGiglet currently has its first products ready in beta: Giglet Hirer and Giglet Freelancer Telegram Bots.\n\nI designed the entire system architecture of the Telegram bots, and developed the bots from scratch, which included integrating the bot to Google Firestore as its database.`,
 );
+
 export const PROJECTS_WORDLE_TITLE = "Wordle";
 export const PROJECTS_WORDLE_ROLE = "Programmer";
 export const PROJECTS_WORDLE_PROJECT_TYPE = "School Project";

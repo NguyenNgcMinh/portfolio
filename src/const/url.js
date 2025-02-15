@@ -7,7 +7,7 @@ export const SKILLS_PATH = "/skills";
 export const EXPERIENCES_PATH = "/experiences";
 export const HOBBIES_PATH = "/hobbies";
 export const CONTACT_PATH = "/contact";
-export const WEBSITE_PIC = "./LOGOPRO.png";
+export const WEBSITE_PIC = "/portfolio/LOGOPRO.png";
 
 // About page
 export const ABOUT_RESUME_URL =
