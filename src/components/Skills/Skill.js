@@ -12,11 +12,6 @@ const Languages = () => {
           skill="english"
           proficiency="spoken_written"
         />
-        <SkillAndProficiency
-          type="languages"
-          skill="mandarin"
-          proficiency="spoken_written"
-        />
       </p>
     </div>
   );
@@ -29,7 +24,7 @@ const ProgrammingLanguages = () => {
       <p>
         <SkillAndProficiency
           type="programming_languages"
-          skill="dart"
+          skill="html"
           proficiency="proficient"
         />
         <SkillAndProficiency
@@ -40,27 +35,23 @@ const ProgrammingLanguages = () => {
         <SkillAndProficiency
           type="programming_languages"
           skill="javascript"
+          proficiency="proficient"
+        />
+       
+        <SkillAndProficiency
+          type="programming_languages"
+          skill="php"
           proficiency="intermediate"
         />
         <SkillAndProficiency
           type="programming_languages"
-          skill="python"
-          proficiency="intermediate"
-        />
-        <SkillAndProficiency
-          type="programming_languages"
-          skill="java"
-          proficiency="intermediate"
-        />
-        <SkillAndProficiency
-          type="programming_languages"
-          skill="kotlin"
+          skill="mysql"
           proficiency="beginner"
         />
         <SkillAndProficiency
           type="programming_languages"
-          skill="swift"
-          proficiency="beginner"
+          skill="figma"
+          proficiency="intermediate"
         />
       </p>
     </div>
@@ -196,67 +187,45 @@ const Tools = () => {
     </div>
   );
 };
-
-const Certifications = () => {
-  return (
-    <div id="certifications" class="skill_section">
-      <Icon.SkillsHeading skillType="certifications" />
-      <p>
-        <Icon.SkillCertification certificationName="responsive" />
-        <Icon.SkillCertification certificationName="javascript" />
-        <Icon.SkillCertification certificationName="frontend" />
-        <Icon.SkillCertification certificationName="visualisation" />
-        <Icon.SkillCertification certificationName="backend" />
-        <Icon.SkillCertification certificationName="scientific" />
-        <Icon.SkillCertification certificationName="data" />
-      </p>
-    </div>
-  );
-};
-
 const SkillAndProficiency = ({ type, skill, proficiency }) => {
-  var proficiencyLevel;
-  var icon;
+  let proficiencyLevel;
+  let icon;
 
+  // Xử lý proficiency với default case
   switch (proficiency) {
-    case "spoken_written":
+    case 'spoken_written':
       proficiencyLevel = textConst.SKILLS_LANGUAGES_SPOKEN_WRITTEN;
       break;
-
-    case "proficient":
+    case 'proficient':
       proficiencyLevel = textConst.SKILLS_PROFICIENCY_PROFICIENT;
       break;
-
-    case "intermediate":
+    case 'intermediate':
       proficiencyLevel = textConst.SKILLS_PROFICIENCY_INTERMEDIATE;
       break;
-
-    case "beginner":
+    case 'beginner':
       proficiencyLevel = textConst.SKILLS_PROFICIENCY_BEGINNER;
       break;
+    default:
+      proficiencyLevel = 'Không xác định'; // Tránh cảnh báo ESLint
   }
 
+  // Xử lý icon với default case
   switch (type) {
-    case "languages":
+    case 'languages':
       icon = <Icon.SkillLanguage languageName={skill} />;
       break;
-
-    case "programming_languages":
+    case 'programming_languages':
+    case 'frameworks':
+    case 'tools':
       icon = <Icon.HardSkill skillName={skill} />;
       break;
-
-    case "frameworks":
-      icon = <Icon.HardSkill skillName={skill} />;
-      break;
-
-    case "tools":
-      icon = <Icon.HardSkill skillName={skill} />;
-      break;
+    default:
+      icon = <Icon.DefaultIcon />; // Đảm bảo không bị thiếu trường hợp
   }
 
   return (
-    <div class="skill">
-      {icon} <span class="proficiency_level">{proficiencyLevel}</span>
+    <div className="skill">
+      {icon} <span className="proficiency_level">{proficiencyLevel}</span>
       <br />
     </div>
   );
@@ -267,7 +236,6 @@ const Skill = {
   ProgrammingLanguages,
   Frameworks,
   Tools,
-  Certifications,
 };
 
 export default Skill;

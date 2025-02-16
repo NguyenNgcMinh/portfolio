@@ -22,7 +22,9 @@ export const PROJECTS_DEFUND_GITHUB_URL = "https://github.com/abramtan/DeFund";
 export const PROJECTS_MUSIC_RECOMMENDATION_COURSE_URL =
   "https://istd.sutd.edu.sg/undergraduate/courses/50038-computational-data-science/";
 export const PROJECTS_MUSIC_RECOMMENDATION_GITHUB_URL =
-  "https://github.com/Fe-56/CDeeS";
+  "https://github.com/nazzysayce/our-laptop-store.git";
+export const PROJECTS_WELLCARE_GITHUB_URL =
+  "https://github.com/LeeHung99/Well-Care-FE.git";
 export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_COURSE_URL =
   "https://istd.sutd.edu.sg/undergraduate/courses/50007-machine-learning/";
 export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_GITHUB_URL =

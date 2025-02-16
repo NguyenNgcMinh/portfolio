@@ -13,7 +13,7 @@ export default function Timeline() {
         <u>{textConst.ABOUT_TIMELINE_TITLE}</u>
       </h3>
       {textConst.ABOUT_TIMELINE_MILESTONES.map((milestone, index) => {
-        if (index % 2 == 0) {
+        if (index % 2 === 0) {
           return (
             <div class="timeline_milestone left_milestone hidden">
               <div class="timeline_milestone_text_box">

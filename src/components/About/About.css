@@ -36,7 +36,9 @@
   margin-right: auto;
   max-width: 400px;
 }
-
+#find_me u{
+  text-decoration: none;
+}
 .find_me_button {
   color: var(--text);
   text-decoration: none;
@@ -80,8 +82,8 @@ h3 {
 }
 
 .buttons:hover {
-  background-color: var(--selected);
-  border-color: var(--selected);
+  background-color: green;
+  color: #fff;
 }
 
 #dbs {

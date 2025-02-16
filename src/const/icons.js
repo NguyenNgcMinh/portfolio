@@ -4,7 +4,7 @@ import * as urlConst from "./url.js";
 
 const GitHubSourceCodeIcon = () => {
   return (
-    <a href={urlConst.SOURCE_CODE_URL} target="_blank" id="github_source">
+    <a href={urlConst.SOURCE_CODE_URL} target="_blank" id="github_source" rel="noreferrer">
       <i class="fa-brands fa-github fa-xl" id="github_icon"></i>
       {textConst.SOURCE_CODE}
     </a>
@@ -45,37 +45,42 @@ const ProjectIcon = ({ iconName, labelText = "" }) => {
 };
 
 const ProjectGitHub = ({ projectName }) => {
-  var githubURL;
+  let githubURL;
 
   switch (projectName) {
     case "defund":
       githubURL = urlConst.PROJECTS_DEFUND_GITHUB_URL;
       break;
-
     case "music_recommendation":
       githubURL = urlConst.PROJECTS_MUSIC_RECOMMENDATION_GITHUB_URL;
       break;
-
+    case "wellcare":
+      githubURL = urlConst.PROJECTS_WELLCARE_GITHUB_URL;
+      break;
     case "online_hate_speech_detection":
       githubURL = urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_GITHUB_URL;
       break;
-
     case "wordle":
       githubURL = urlConst.PROJECTS_WORDLE_GITHUB_URL;
       break;
-
     case "will_i_go_broke":
       githubURL = urlConst.PROJECTS_WILL_I_GO_BROKE_GITHUB_URL;
       break;
-
     case "pokemon_battle":
       githubURL = urlConst.PROJECTS_POKEMON_BATTLE_GITHUB_URL;
       break;
+    default:
+      githubURL = "#"; // hoặc để trống hoặc hiển thị thông báo
   }
 
   return (
-    <a href={githubURL} target="_blank" class="project_github">
-      <i class="fa-brands fa-github icon"></i>
+    <a
+      href={githubURL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project_github"
+    >
+      <i className="fa-brands fa-github icon"></i>
       {textConst.PROJECTS_GITHUB}
     </a>
   );
@@ -223,6 +228,16 @@ const HardSkill = ({ skillName }) => {
       skill = textConst.SKILL_CSS;
       iconClass += "fa-brands fa-css3-alt";
       break;
+    case "php":
+      skill = textConst.SKILL_PHP;
+      iconClass += "fa-brands fa-php";
+      break;
+    
+    case "mysql":
+      skill = textConst.SKILL_MYSQL;
+      iconClass += "fa-solid fa-database";
+      break;
+      
 
     case "d3":
       skill = textConst.SKILL_D3;
@@ -364,7 +379,7 @@ const SoftSkill = ({ skillName }) => {
 };
 
 const SkillsHeading = ({ skillType }) => {
-  var type;
+  let type;
   let iconClass = "fa-solid icon ";
 
   switch (skillType) {
@@ -372,38 +387,37 @@ const SkillsHeading = ({ skillType }) => {
       type = textConst.SKILLS_LANGUAGES_TITLE;
       iconClass += "fa-language";
       break;
-
     case "programming_languages":
       type = textConst.SKILLS_PROGRAMMING_LANGUAGES_TITLE;
       iconClass += "fa-terminal";
       break;
-
     case "frameworks":
       type = textConst.SKILLS_FRAMEWORKS_TITLE;
       iconClass += "fa-toolbox";
       break;
-
     case "tools":
       type = textConst.SKILLS_TOOLS_TITLE;
       iconClass += "fa-screwdriver-wrench";
       break;
-
     case "certifications":
       type = textConst.SKILLS_CERTIFICATIONS_TITLE;
       iconClass += "fa-certificate";
       break;
+    default:
+      type = "Unknown";
+      iconClass += "fa-question";
   }
 
   return (
     <h3>
-      <i class={iconClass}></i>
+      <i className={iconClass}></i>
       <u>{type}</u>
     </h3>
   );
 };
 
 const SkillSubHeading = ({ skillType }) => {
-  var type;
+  let type;
   let iconClass = "fa-solid icon ";
 
   switch (skillType) {
@@ -411,21 +425,22 @@ const SkillSubHeading = ({ skillType }) => {
       type = textConst.SKILLS_FRAMEWORKS_FRONTEND;
       iconClass += "fa-desktop";
       break;
-
     case "backend":
       type = textConst.SKILLS_FRAMEWORKS_BACKEND;
-      iconClass += "fa-databse";
+      iconClass += "fa-database"; // Fixed typo
       break;
-
     case "mobile":
       type = textConst.SKILLS_FRAMEWORKS_MOBILE;
       iconClass += "fa-mobile";
       break;
+    default:
+      type = "Unknown Framework";
+      iconClass += "fa-question";
   }
 
   return (
     <h5>
-      <i class={iconClass}></i>
+      <i className={iconClass}></i>
       {type}
     </h5>
   );
@@ -433,7 +448,7 @@ const SkillSubHeading = ({ skillType }) => {
 
 const SkillLanguage = ({ languageName }) => {
   let iconClass = "fa-solid icon fa-lg ";
-  var language;
+  let language;
 
   switch (languageName) {
     case "english":
@@ -441,65 +456,61 @@ const SkillLanguage = ({ languageName }) => {
       language = textConst.SKILLS_LANGUAGES_ENGLISH;
       break;
 
-    case "mandarin":
-      iconClass += "fa-earth-asia";
-      language = textConst.SKILLS_LANGUAGES_MANDARIN;
-      break;
+    default:
+      iconClass += "fa-globe";
+      language = "Unknown Language";
   }
 
   return (
     <span>
-      <i class={iconClass}></i>
+      <i className={iconClass}></i>
       {language}
     </span>
   );
 };
 
 const SkillCertification = ({ certificationName }) => {
-  var certification;
-  var certificationURL;
+  let certification;
+  let certificationURL;
 
   switch (certificationName) {
     case "responsive":
       certification = textConst.SKILLS_CERTIFICATIONS_RESPONSIVE;
       certificationURL = urlConst.SKILLS_CERTIFICATIONS_RESPONSIVE_URL;
       break;
-
     case "javascript":
       certification = textConst.SKILLS_CERTIFICATIONS_JAVASCRIPT;
       certificationURL = urlConst.SKILLS_CERTIFICATIONS_JAVASCRIPT_URL;
       break;
-
     case "frontend":
       certification = textConst.SKILLS_CERTIFICATIONS_FRONTEND;
       certificationURL = urlConst.SKILLS_CERTIFICATIONS_FRONTEND_URL;
       break;
-
     case "visualisation":
       certification = textConst.SKILLS_CERTIFICATIONS_VISUALISATION;
       certificationURL = urlConst.SKILLS_CERTIFICATIONS_VISUALISATION_URL;
       break;
-
     case "backend":
       certification = textConst.SKILLS_CERTIFICATIONS_BACKEND;
       certificationURL = urlConst.SKILLS_CERTIFICATIONS_BACKEND_URL;
       break;
-
     case "scientific":
       certification = textConst.SKILLS_CERTIFICATIONS_SCIENTIFIC;
       certificationURL = urlConst.SKILLS_CERTIFICATIONS_SCIENTIFIC_URL;
       break;
-
     case "data":
       certification = textConst.SKILLS_CERTIFICATIONS_DATA;
       certificationURL = urlConst.SKILLS_CERTIFICATIONS_DATA_URL;
       break;
+    default:
+      certification = "Unknown Certification";
+      certificationURL = "#";
   }
 
   return (
-    <div class="skill">
-      <a href={certificationURL} target="_blank">
-        <i class="fa-brands fa-free-code-camp icon fa-lg"></i>
+    <div className="skill">
+      <a href={certificationURL} target="_blank" rel="noopener noreferrer">
+        <i className="fa-brands fa-free-code-camp icon fa-lg"></i>
         {certification}
       </a>
     </div>
@@ -563,11 +574,16 @@ const HobbyHeading = ({ hobbyName }) => {
       iconClass += "fa-code";
       labelText = textConst.HOBBIES_CODING_TITLE;
       break;
+
+    default:
+      iconClass += "fa-question-circle";
+      labelText = "Unknown Hobby";
+      break;
   }
 
   return (
-    <h3 class="hobby_title">
-      <i class={iconClass}></i>
+    <h3 className="hobby_title">
+      <i className={iconClass}></i>
       <u>{labelText}</u>
     </h3>
   );
@@ -597,11 +613,17 @@ const HobbyLinkIcon = ({ hobbyName }) => {
       labelText = textConst.HOBBIES_CODING_GITHUB_TEXT;
       iconURL = urlConst.ABOUT_GITHUB_URL;
       break;
+
+    default:
+      iconClass += "fa-question-circle";
+      labelText = "Unknown Link";
+      iconURL = "#";
+      break;
   }
 
   return (
-    <a href={iconURL} target="_blank">
-      <i class={iconClass}></i>
+    <a href={iconURL} target="_blank" rel="noreferrer">
+      <i className={iconClass}></i>
       {labelText}
     </a>
   );
@@ -648,11 +670,18 @@ const ContactLinkIcon = ({ contactType }) => {
       iconURL = urlConst.CONTACT_LOCATION_URL;
       htmlID = contactType;
       break;
+
+    default:
+      iconClass += "fa-question-circle";
+      labelText = "Unknown Contact";
+      iconURL = "#";
+      htmlID = "unknown_contact";
+      break;
   }
 
   return (
-    <a href={iconURL} target="_blank" id={htmlID} class="contact_link">
-      <i class={iconClass}></i>
+    <a href={iconURL} target="_blank" rel="noreferrer" id={htmlID} className="contact_link">
+      <i className={iconClass}></i>
       {labelText}
     </a>
   );

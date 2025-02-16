@@ -21,28 +21,28 @@ export const ABOUT_MY_TITLE = "Front-End Developer";
 //   "I like programming work, it brings me excitement and newnes";
 export const ABOUT_ABOUT =
   "Nguyen Ngoc Minh, 22 years old, was born in Vietnam. I am a recent graduate of information technology majoring in Front-End developer. Since childhood, I have been passionate about computers, so I studied this field and discovered that this field is very interesting and interesting. It gives me a lot of creativity as well as helps me develop myself";
-export const ABOUT_RESUME_BUTTON = "My Resume >";
+export const ABOUT_RESUME_BUTTON = "My Resume";
 export const ABOUT_FIND_ME_WEB = "Find me on the Web";
 export const ABOUT_GITHUB = "Github";
 export const ABOUT_LINKEDIN = "LinkedIn";
-export const ABOUT_PROFILE_PIC_ALT_TEXT = "Lim Fuo En profile picture";
+export const ABOUT_PROFILE_PIC_ALT_TEXT = "Nguyen  Ngoc Minh profile picture";
 export const ABOUT_TIMELINE_TITLE = "(Professional) Timeline";
 export const ABOUT_TIMELINE_MILESTONES = [
   {
-    2016: "First venture into the world of coding. Attended a basic Android app development course using storyboards",
+    2016: "Explore and learn about coding",
   },
   {
-    2017: "Attended a coding course, where I learnt Ruby, the first programming language I've ever learnt",
+    2017: "Learn programming languages ​​at vocational school",
   },
-  { 2020: "Matriculated at SUTD" },
+  { 2022: "College degree majoring in website design" },
   {
-    2021: "Completed my first ever internship at DBS Bank as a Business Analyst Intern",
-  },
-  {
-    2022: "Completed mobile application development internship at Housing & Development Board (HDB)",
+    2022: "Personal website code uses basic languages ​​such as HTML, CSS, figma, JavaScript to complete the website",
   },
   {
-    2023: "Completed Flutter developer internships at CoffeeSpace and MyExpoPlace in the United States",
+    2023: "Collaborate with the team to create a website selling technology items using HTML5, CSS3, PHP, MySQL",
+  },
+  {
+    2024: "Complete the graduation project in conjunction with the BE team to perform main functions for the website",
   },
 ];
 
@@ -52,96 +52,32 @@ export const PROJECTS_SKILLS_LABEL = "Skills";
 export const PROJECTS_GITHUB = "Check out the project's Github!";
 export const PROJECTS_PROJECT_LINK = "Project Link >";
 export const PROJECTS_VIEW_MORE = "View more";
-export const PROJECTS_DEFUND_TITLE = "DeFund";
-export const PROJECTS_DEFUND_ROLE = "Software Engineer";
+export const PROJECTS_DEFUND_TITLE = "The Coffe House";
+export const PROJECTS_DEFUND_ROLE = "Member";
 export const PROJECTS_DEFUND_TYPE = "School Project";
-export const PROJECTS_DEFUND_TIMELINE = "September 2024 to December 2024";
+export const PROJECTS_DEFUND_TIMELINE = "05/2022 - 08/2022 ";
 export const PROJECTS_DEFUND_PROJECT_DESCRIPTION = parse(
-  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_DEFUND_COURSE_URL} target='_blank'>50.037 Blockchain Technology</a>.\n\nDeFund is a decentralized crowdfunding platform designed to address the limitations of traditional platforms like GoFundMe. It provides transparency, trust, and global accessibility in fundraising using blockchain technology.\n\nBuilt the platform's core smart contracts in Solidity and deployed on the Ethereum Sepolia testnet. Developed the web app frontend using Next.js and integrated it with MetaMask for wallet connectivity. Implemented key features like milestone-based fund disbursement, automatic refunds for unmet funding goals, and real-time notifications. Optimized gas usage through efficient data structures, state variable packing, and reduced event data.\n\nCollaborated with a team to ensure secure, scalable, and user-centric design, addressing potential vulnerabilities and scalability challenges.`,
+  `Use HTML to create a website selling coffee online  and links to subpages and details of each product on your store. Use CSS to make the website more beautiful and eye-catching with vivid effects. Use javascript to perform image transfer, pagination, image zoom, text playback, and dropdown functions for menus`,
 );
 export const PROJECTS_MUSIC_RECOMMENDATION_TITLE =
-  "Music Recommendation Based on Emotion";
-export const PROJECTS_MUSIC_RECOMMENDATION_ROLE = "Data Scientist";
+  "Laptop Store";
+export const PROJECTS_MUSIC_RECOMMENDATION_ROLE = "Member";
 export const PROJECTS_MUSIC_RECOMMENDATION_TYPE = "School Project";
 export const PROJECTS_MUSIC_RECOMMENDATION_TIMELINE =
-  "January 2024 to April 2024";
+  "09/2023 - 12/2023 ";
 export const PROJECTS_MUSIC_RECOMMENDATION_PROJECT_DESCRIPTION = parse(
-  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_MUSIC_RECOMMENDATION_COURSE_URL} target='_blank'>50.038 Computational Data Science</a>.\n\nConducted literature review on the current space of Music Emotion Recognition (MER) and applied data science, machine learning and deep learning techniques to build a pipeline that can predict emotions (valence and arousal) from musical features extracted from .mp3 files.<br></br>Developed a front-end UI using Streamlit to showcase the final product of a web app that users can upload .mp3 files to, have the emotions of that song predicted, and get recommended the most emotionally similar songs stored in the Vector Database backend.`,
+  `Use HTML to create an online electronics sales website and link to subpages and detailed information about each product on your store. Use CSS to make the website more beautiful and eye-catching with vivid effects. Use php to perform main functions such as adding cart, increasing or decreasing number of products, shopping cart, deleting cart, adding, editing, deleting products, logging in, registering, online payment. Use SCSS to respond, create menus, effects, create login and registration forms, and display popups.`,
 );
-export const PROJECTS_LOOK_AND_EARN_TITLE = "Look and Earn";
-export const PROJECTS_LOOK_AND_EARN_ROLE = "Full-Stack Developer";
-export const PROJECTS_LOOK_AND_EARN_PROJECT_TYPE = "Start-up Project";
-export const PROJECTS_LOOK_AND_EARN_TIMELINE = "October 2022 to Present";
+export const PROJECTS_LOOK_AND_EARN_TITLE = "Well-Care Pharmacity";
+export const PROJECTS_LOOK_AND_EARN_ROLE = "Front-End Developer";
+export const PROJECTS_LOOK_AND_EARN_PROJECT_TYPE = "Graduation project";
+export const PROJECTS_LOOK_AND_EARN_TIMELINE = "06/2024 - 09/2024";
 export const PROJECTS_LOOK_AND_EARN_PROJECT_DESCRIPTION =
-  "Look and Earn is a start-up project that aims to incentivise users to view advertisements posted by partner companies.\n\nLook and Earn has a Flutter app that allows the user to view current advertisements (image, video, or GIF), bookmark advertisements, and check their account balance earned from watching advertisements.\n\nThe app has mechanisms in place to ensure that the user has to finish viewing the entire advertisement before they can move on to the next.\n\nLook and Earn also has an admin web app to manage the advertisements that will be displayed in the app.\n\nI designed the entire system architecture of the app and web app, and developed them from scratch.\n\nI integrated Google Firestore to the app and web as their common database.";
-export const PROJECTS_LONELY_NO_LONGER_TITLE = "Lonely No Longer";
-export const PROJECTS_LONELY_NO_LONGER_ROLE = "Developer";
-export const PROJECTS_LONELY_NO_LONGER_PROJECT_TYPE = "Start-up Project";
-export const PROJECTS_LONELY_NO_LONGER_TIMELINE = "May 2022 to Sep 2022";
-export const PROJECTS_LONELY_NO_LONGER_DESCRIPTION =
-  "Lonely No Longer (LNL) is a start-up project that aims to connect singles in Singapore looking for a genuine relationship through a couple of (literally) blind dates in groups at the beginning.\n\nLNL has a Telegram bot to serve as an assistant bot to customers for viewing their application status, buying items from our store, and receiving important updates.\n\nI designed the entire system architecture of the Telegram bot, and developed it from scratch, which included integrating the bot to Google Firestore as its database.\n\nI also integrated Google Sheets into the workflow, where its contents are synchronised seamlessly with the database.\n\nI wrote the entire technical documentation of the mechanism of the Telegram bot from scratch, including the control flow diagrams of certain commands.";
-export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_TITLE =
-  "Online Hate Speech Detection";
-export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_ROLE =
-  "Machine Learning Engineer";
-export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_PROJECT_TYPE =
-  "School Project";
-export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_TIMELINE =
-  "July 2022 to August 2022";
-export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_DESCRIPTION = parse(
-  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_COURSE_URL} target='_blank'>50.007 Machine Learning</a>.\n\nTrained a variety of machine learning models for online hate speech classification.\n\nExtensively tuned the model hyper-parameters to improve model performance.\n\nUsed machine learning techniques not taught in class to improve model performance.\n\nI focused on tuning and optimising a machine learning model, called Support Vector Machines (SVM)`,
-);
-export const PROJECTS_TRANSFERCONNECT_TITLE = "TransferConnect";
-export const PROJECTS_TRANSFERCONNECT_ROLE = "Backend Developer";
-export const PROJECTS_TRANSFERCONNECT_PROJECT_TYPE = "School Project";
-export const PROJECTS_TRANSFERCONNECT_TIMELINE = "May 2022 to August 2022";
-export const PROJECTS_TRANSFERCONNECT_PROJECT_DESCRIPTION = parse(
-  `For SUTD's course: <a href=${urlConst.PROJECTS_TRANSFERCONNECT_COURSE_URL} target='_blank'>50.003 Elements of Software Construction</a>.\n\nTransferConnect acts as a middleman between loyalty programs and banks to facilitate the transfer and conversion of loyalty points from bank transactions.\n\nThis project focuses on the development of a bankend API server and database for TransferConnect, as well as a frontend bank app to demonstrate the end-to-end workflow.\n\nI developed highly performant and functional APIs to meet project requirements.\n\nI also implemented extensive testing and fuzzing to ensure the proper functioning of the entire system.`,
-);
-export const PROJECTS_GIGLET_TITLE = "Giglet";
-export const PROJECTS_GIGLET_ROLE = "Developer";
-export const PROJECTS_GIGLET_PROJECT_TYPE = "School Project";
-export const PROJECTS_GIGLET_TIMELINE = "January 2022 to April 2022";
-export const PROJECTS_GIGLET_PROJECT_DESCRIPTION = parse(
-  `For SUTD's course: <a href=${urlConst.PROJECTS_GIGLET_COURSE_URL} target='_blank'>30.001 Entrepreneurship</a>.\n\nGiglet is our idea for a start-up to showcase our knowledge of entrepreneurship learned from the Entrepreneurship course.\n\nGiglet is a platform that matches STEM undergraduates in South East Asia to companies via gig work, for the companies to test the waters and see whether the students are suitable for an internship or full-time role in their company.\n\nGiglet currently has its first products ready in beta: Giglet Hirer and Giglet Freelancer Telegram Bots.\n\nI designed the entire system architecture of the Telegram bots, and developed the bots from scratch, which included integrating the bot to Google Firestore as its database.`,
-);
-
-export const PROJECTS_WORDLE_TITLE = "Wordle";
-export const PROJECTS_WORDLE_ROLE = "Programmer";
-export const PROJECTS_WORDLE_PROJECT_TYPE = "School Project";
-export const PROJECTS_WORDLE_TIMELINE = "January 2022 to April 2022";
-export const PROJECTS_WORDLE_PROJECT_DESCRIPTION = parse(
-  `For SUTD's course: <a href=${urlConst.PROJECTS_WORDLE_COURSE_URL} target="_blank">50.002 Computation Structures</a>.\n\nThis project is inspired by the popular online word-guessing game, <a href=${urlConst.PROJECTS_WORDLE_URL} target="_blank">Wordle</a>.\n\nThis project transforms the software nature of the original game into a piece of handcrafted hardware, in the form of an arcade-like machine.\n\nI programmed the 16-bit ALU (Arithmetic Logic Unit) of the machine and helped to program the finite state machine for the game logic.`,
-);
-export const PROJECTS_FEAST_TITLE =
-  "Food Establishment Autonomous Spatial Tracking (FEAST)";
-export const PROJECTS_FEAST_ROLE = "Frontend Lead";
-export const PROJECTS_FEAST_PROJECT_TYPE = "School Project";
-export const PROJECTS_FEAST_TIMELINE = "January 2022 to April 2022";
-export const PROJECTS_FEAST_PROJECT_DESCRIPTION = parse(
-  `For SUTD's course: <a href=${urlConst.PROJECTS_FEAST_COURSE_URL} target="_blank">50.001 Information Systems & Programming</a>.\n\nFEAST is a real-time crowd tracking app that allows users to conveniently check the current crowd levels at various food and beverage (F&B) establishments in SUTD.\n\nAccompanying the crowd tracking functionality are a suite of features that improve user experience in the app, such as predictive estimated waiting time, customisability by prioritising user preferred locations, and real-time business advisory.\n\nBuilt using modular design principles, the app has a plug-and-play model that allows easy implementation at any location, and even contains the infrastructure to expand beyond F&B to track crowd levels of other kinds of locations.\n\nI led the frontend team and helped to design the user interface of the app, and ensured that the data from the backend is displayed properly on the frontend.`,
-);
-export const PROJECTS_WILL_I_GO_BROKE_TITLE = "Will I Go Broke?";
-export const PROJECTS_WILL_I_GO_BROKE_ROLE = "Developer";
-export const PROJECTS_WILL_I_GO_BROKE_PROJECT_TYPE = "Personal Project";
-export const PROJECTS_WILL_I_GO_BROKE_TIMELINE =
-  "December 2021 to January 2022";
-export const PROJECTS_WILL_I_GO_BROKE_PROJECT_DESCRIPTION =
-  "Will I Go Broke? is a Telegram bot that is targetted at university students in Singapore.\n\nThe bot maps out your finances over your university/school life and determines how your financial situation might turn out once you graduate.\n\nI developed the bot from scratch and designed the user experience and mechanics behind the bot.";
-export const PROJECTS_POKEMON_BATTLE_TITLE = "Pokemon Battle";
-export const PROJECTS_POKEMON_BATTLE_ROLE = "Team Lead";
-export const PROJECTS_POKEMON_BATTLE_PROJECT_TYPE = "School Project";
-export const PROJECTS_POKEMON_BATTLE_TIMELINE =
-  "September 2020 to December 2020";
-export const PROJECTS_POKEMON_BATTLE_PROJECT_DESCRIPTION = parse(
-  `For SUTD's course: <a href=${urlConst.PROJECTS_POKEMON_BATTLE_COURSE_URL} target="_blank">10.014 Computational Thinking for Design</a>.\n\nPokemon Battle is inspired by the popular game series, <a href=${urlConst.PROJECTS_POKEMON_BATTLE_URL} target="_blank">Pokémon</a>.\n\nIt is a Python text-based game for 2 players, where each player select a Pokemon from a list of 18 Pokemons of all types with a wide selection of moves, and battle each other.\n\nIt simulates the actual battle mechanics of modern Pokemon games, albeit providing a textual interface to play in.\n\nI led the team for the game research and design of the game, and coded the mechanics and flow of the game.`,
-);
-
+  "Use ReactJS to create an online pharmacy website and link to subpages and detailed information about each product on your store. Use SCSS to respond, create menus, effects, create login and registration forms, and display popups. On the backend, use php and mysql to connect data to add, edit, delete products, add, edit, delete members, edit, delete comments, pay online, log in, register with otp. On the frontend side, use typescript to edit customer information, check order details, order history via phone number, and cancel orders. Also use the chat box to answer all customer questions about our store";
 // Skills page
 export const SKILLS_TITLE = "Skills";
 export const SKILLS_LANGUAGES_TITLE = "Languages";
 export const SKILLS_LANGUAGES_ENGLISH = "English";
-export const SKILLS_LANGUAGES_MANDARIN = "Mandarin";
 export const SKILLS_LANGUAGES_SPOKEN_WRITTEN = "(spoken & written)";
 export const SKILLS_PROGRAMMING_LANGUAGES_TITLE = "Programming Languages";
 export const SKILLS_PROFICIENCY_PROFICIENT = "(proficient)";
@@ -279,6 +215,9 @@ export const SKILL_KOTLIN = "Kotlin";
 export const SKILL_SWIFT = "Swift";
 export const SKILL_HTML = "HTML";
 export const SKILL_CSS = "CSS";
+export const SKILL_PHP = "PHP";
+export const SKILL_MYSQL = "MYSQL";
+
 export const SKILL_D3 = "D3.js";
 export const SKILL_BOOTSTRAP = "Bootstrap";
 export const SKILL_MONGO = "MongoDB";

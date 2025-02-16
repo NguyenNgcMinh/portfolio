@@ -3,7 +3,9 @@
   max-width: 1200px;
   margin-bottom: 40px;
 }
-
+#timeline u{
+  text-decoration: none;
+}
 #timeline::after {
   /* this is for the vertical line running through the center of the timeline element */
   content: "";
@@ -22,9 +24,9 @@
   width: 50%;
 }
 
-.timeline_milestone:hover {
-  color: var(--selected);
-}
+/* .timeline_milestone:hover {
+  color: #000;
+} */
 
 .timeline_milestone_year {
   font-weight: bolder;
@@ -37,9 +39,10 @@
 
 .timeline_milestone_text_box {
   padding: 20px 20px;
-  background: var(--quote);
+  background: var(--selected);
   position: relative;
   border-radius: var(--border-radius);
+  color: #fff;
 }
 
 .left_milestone {

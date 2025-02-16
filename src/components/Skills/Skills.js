@@ -17,7 +17,6 @@ export default function Skills() {
       <Skill.ProgrammingLanguages />
       <Skill.Frameworks />
       <Skill.Tools />
-      <Skill.Certifications />
     </div>
   );
 }
