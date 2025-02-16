@@ -25,7 +25,12 @@ const ProgrammingLanguages = () => {
         <SkillAndProficiency
           type="programming_languages"
           skill="html"
-          proficiency="proficient"
+          proficiency="intermediate"
+        />
+         <SkillAndProficiency
+          type="programming_languages"
+          skill="css"
+          proficiency="intermediate"
         />
         <SkillAndProficiency
           type="programming_languages"
@@ -35,7 +40,7 @@ const ProgrammingLanguages = () => {
         <SkillAndProficiency
           type="programming_languages"
           skill="javascript"
-          proficiency="proficient"
+          proficiency="intermediate"
         />
        
         <SkillAndProficiency
@@ -46,11 +51,11 @@ const ProgrammingLanguages = () => {
         <SkillAndProficiency
           type="programming_languages"
           skill="mysql"
-          proficiency="beginner"
+          proficiency="intermediate"
         />
         <SkillAndProficiency
           type="programming_languages"
-          skill="figma"
+          skill="node"
           proficiency="intermediate"
         />
       </p>
@@ -86,16 +91,7 @@ const Frameworks = () => {
               skill="css"
               proficiency="intermediate"
             />
-            <SkillAndProficiency
-              type="frameworks"
-              skill="d3"
-              proficiency="beginner"
-            />
-            <SkillAndProficiency
-              type="frameworks"
-              skill="bootstrap"
-              proficiency="beginner"
-            />
+           
           </p>
         </div>
         <div id="backend" class="sub_skill col-sm-4">
@@ -103,12 +99,12 @@ const Frameworks = () => {
           <p>
             <SkillAndProficiency
               type="frameworks"
-              skill="mongo"
+              skill="mysql"
               proficiency="intermediate"
             />
             <SkillAndProficiency
               type="frameworks"
-              skill="express"
+              skill="php"
               proficiency="intermediate"
             />
             <SkillAndProficiency
@@ -116,28 +112,9 @@ const Frameworks = () => {
               skill="node"
               proficiency="intermediate"
             />
-            <SkillAndProficiency
-              type="frameworks"
-              skill="firebase"
-              proficiency="intermediate"
-            />
           </p>
         </div>
-        <div id="mobile" class="sub_skill col-sm-4">
-          <Icon.SkillSubHeading skillType="mobile" />
-          <p>
-            <SkillAndProficiency
-              type="frameworks"
-              skill="flutter"
-              proficiency="proficient"
-            />
-            <SkillAndProficiency
-              type="frameworks"
-              skill="pytelegrambot"
-              proficiency="intermediate"
-            />
-          </p>
-        </div>
+       
       </div>
     </div>
   );
@@ -160,11 +137,6 @@ const Tools = () => {
         />
         <SkillAndProficiency
           type="frameworks"
-          skill="android_studio"
-          proficiency="intermediate"
-        />
-        <SkillAndProficiency
-          type="frameworks"
           skill="figma"
           proficiency="intermediate"
         />
@@ -173,16 +145,7 @@ const Tools = () => {
           skill="postman"
           proficiency="intermediate"
         />
-        <SkillAndProficiency
-          type="frameworks"
-          skill="xcode"
-          proficiency="beginner"
-        />
-        <SkillAndProficiency
-          type="frameworks"
-          skill="jira"
-          proficiency="beginner"
-        />
+       
       </p>
     </div>
   );

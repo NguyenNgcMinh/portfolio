@@ -469,53 +469,6 @@ const SkillLanguage = ({ languageName }) => {
   );
 };
 
-const SkillCertification = ({ certificationName }) => {
-  let certification;
-  let certificationURL;
-
-  switch (certificationName) {
-    case "responsive":
-      certification = textConst.SKILLS_CERTIFICATIONS_RESPONSIVE;
-      certificationURL = urlConst.SKILLS_CERTIFICATIONS_RESPONSIVE_URL;
-      break;
-    case "javascript":
-      certification = textConst.SKILLS_CERTIFICATIONS_JAVASCRIPT;
-      certificationURL = urlConst.SKILLS_CERTIFICATIONS_JAVASCRIPT_URL;
-      break;
-    case "frontend":
-      certification = textConst.SKILLS_CERTIFICATIONS_FRONTEND;
-      certificationURL = urlConst.SKILLS_CERTIFICATIONS_FRONTEND_URL;
-      break;
-    case "visualisation":
-      certification = textConst.SKILLS_CERTIFICATIONS_VISUALISATION;
-      certificationURL = urlConst.SKILLS_CERTIFICATIONS_VISUALISATION_URL;
-      break;
-    case "backend":
-      certification = textConst.SKILLS_CERTIFICATIONS_BACKEND;
-      certificationURL = urlConst.SKILLS_CERTIFICATIONS_BACKEND_URL;
-      break;
-    case "scientific":
-      certification = textConst.SKILLS_CERTIFICATIONS_SCIENTIFIC;
-      certificationURL = urlConst.SKILLS_CERTIFICATIONS_SCIENTIFIC_URL;
-      break;
-    case "data":
-      certification = textConst.SKILLS_CERTIFICATIONS_DATA;
-      certificationURL = urlConst.SKILLS_CERTIFICATIONS_DATA_URL;
-      break;
-    default:
-      certification = "Unknown Certification";
-      certificationURL = "#";
-  }
-
-  return (
-    <div className="skill">
-      <a href={certificationURL} target="_blank" rel="noopener noreferrer">
-        <i className="fa-brands fa-free-code-camp icon fa-lg"></i>
-        {certification}
-      </a>
-    </div>
-  );
-};
 
 const ExperienceIcon = ({ iconName, labelText }) => {
   let iconClass = "fa-solid icon ";
@@ -550,23 +503,23 @@ const HobbyHeading = ({ hobbyName }) => {
   var labelText;
 
   switch (hobbyName) {
-    case "cycling":
-      iconClass += "fa-person-biking";
+    case "gym":
+      iconClass += "fa-solid fa-dumbbell";
       labelText = textConst.HOBBIES_CYCLING_TITLE;
       break;
 
-    case "running":
-      iconClass += "fa-person-running";
+      case "cooking":
+        iconClass += "fa-solid fa-utensils";
       labelText = textConst.HOBBIES_RUNNING_TITLE;
       break;
 
-    case "guitar":
-      iconClass += "fa-guitar";
+      case "music":
+        iconClass += "fa-solid fa-music";
       labelText = textConst.HOBBIES_GUITAR_TITLE;
       break;
 
     case "netflix":
-      iconClass += "fa-film";
+      iconClass += "fa-solid fa-film";
       labelText = textConst.HOBBIES_NETFLIX_TITLE;
       break;
 
@@ -697,7 +650,6 @@ const Icon = {
   SkillsHeading,
   SkillSubHeading,
   SkillLanguage,
-  SkillCertification,
   ExperienceIcon,
   HobbyHeading,
   HobbyLinkIcon,

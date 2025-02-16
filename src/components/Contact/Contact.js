@@ -18,7 +18,6 @@ export default function Contact() {
       </h5>
       <Email />
       <LinkedIn />
-      <Telegram />
       <Phone />
       <Location />
     </div>
@@ -47,16 +46,7 @@ const LinkedIn = () => {
   );
 };
 
-const Telegram = () => {
-  return (
-    <div id="telegram" class="contact_section">
-      <h3>
-        <u>{textConst.CONTACT_TELEGRAM_TITLE}</u>
-      </h3>
-      <Icon.ContactLinkIcon contactType="telegram" />
-    </div>
-  );
-};
+
 
 const Phone = () => {
   return (

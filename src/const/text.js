@@ -148,18 +148,17 @@ export const EXPERIENCES_DBS_EXPERIENCE_DESCRIPTION = parse(
 
 // Hobbies page
 export const HOBBIES_TITLE = "Hobbies";
-export const HOBBIES_CYCLING_TITLE = "Road Cycling";
+export const HOBBIES_CYCLING_TITLE = "Gym";
 export const HOBBIES_CYCLING_DESCRIPTION =
-  parse(`I absolutely love road cycling! I have been cycling since 2018, when my friends introduced me to road cycling. My first road bike was a <a href=${urlConst.HOBBIES_CYCLING_TREK_URL} target="_blank">2016 Trek 1.2</a>. Since then, I've bought, rode, and sold several bikes. I am now riding a <a href=${urlConst.HOBBIES_CYCLING_BIANCHI_URL} target="_blank">Bianchi Sprint</a>.
-\n\nI don't race, I just cycle for fitness, to explore the world around me and for the sheer joy of riding a bike.`);
-export const HOBBIES_RUNNING_TITLE = "Running";
+  parse(`I am passionate about going to the gym, it helps me have good health and an agile and strong body. Every time I go to the gym, I feel my body relax after hours of stressful project work.`);
+export const HOBBIES_RUNNING_TITLE = "Cooking";
 export const HOBBIES_RUNNING_DESCRIPTION = parse(
-  `I used to dislike running when I was younger, due to my bad-to-mediocre 2.4km timings in secondary school and junior college.\n\nHowever, my perception changed when I started running more often in late-2022 as an alterantive way get fitter and increase my aerobic endurance other than cycling. When I realised that running was much more enjoyable when done at manageable paces and for longer distances, I decided to pick up runnning more seriously. Additionally, it takes up less time and costs less than cycling.\n\nI intend to particiate in half-marathons and marathons in the future, and hence, I am running rather regularly nowadays. It is also because my purchase of a <a href=${urlConst.HOBBIES_RUNNING_GARMIN_URL} target="_blank">Garmin Forerunner 55</a> has provided me a strong extrinsic motivation to run! Or maybe I just want to justify the cost of spending so much on a watch.`,
+  `I love to eat so cooking is my passion.`,
 );
 export const HOBBIES_RUNNING_CYCLING_STRAVA_TEXT = "Check out my Strava!";
-export const HOBBIES_GUITAR_TITLE = "Electric Guitar";
+export const HOBBIES_GUITAR_TITLE = "Music";
 export const HOBBIES_GUITAR_DESCRIPTION = parse(
-  `I love playing the electric guitar as well. I started playing it in 2019 simply because I just wanted to jam to my favourite music. I never hired an instructor to teach me how to play the guitar. I taught myself how to play by watching videos of other guitarists and learning songs by myself. I currently play an <a href=${urlConst.HOBBIES_GUITAR_GUITAR_URL} target="_blank">Ibanez GRGR131EX</a> superstrat, plugged into a <a href=${urlConst.HOBBIES_GUITAR_AMP_URL} target="_blank">Fender Champion 20</a> amplifier.\n\nI usually play rock and metal songs by <a href=${urlConst.HOBBIES_GUITAR_LINKIN_PARK_URL} target="_blank">Linkin Park</a>, <a href=${urlConst.HOBBIES_GUITAR_METALLICA_URL} target="_blank">Metallica</a>, and <a href=${urlConst.HOBBIES_GUITAR_GREEN_DAY_URL} target="_blank">Green Day</a>. These three are some of my most favourite bands to play and listen to.\n\nBut recently, I've been playing the instrumental covers of more popular songs, where I literally make my guitar "sing" out the vocals/lyrics of the song.\n\nI don't play for a band or perform. I just play for the sheer joy of playing my favourite riffs and songs on a guitar.`,
+  `I really like listening to music when studying and working. It makes me more energetic when listening to it.`,
 );
 export const HOBBIES_GUITAR_SPOTIFY_TEXT = "Check out my Spotify!";
 export const HOBBIES_NETFLIX_TITLE = "Netflix and Anime";
@@ -175,17 +174,17 @@ export const HOBBIES_CODING_GITHUB_TEXT = "Check out my GitHub!";
 // Contact page
 export const CONTACT_TITLE = "Contact";
 export const CONTACT_DESCRIPTION =
-  "If you like what you see here and would like to collaborate with me, please contact me for a chat. Strictly for work-related purposes only, please!";
+  "If you want to find a way to contact me, here is my contact information";
 export const CONTACT_EMAIL_TITLE = "Email";
-export const CONTACT_EMAIL = "limfuoen1999@gmail.com";
+export const CONTACT_EMAIL = "nguyenngocminh18042002@gmail.com";
 export const CONTACT_LINKEDIN_TITLE = "LinkedIn";
-export const CONTACT_LINKEDIN = "Lim Fuo En's LinkedIn";
+export const CONTACT_LINKEDIN = "Minh Nguyen Ngoc";
 export const CONTACT_TELEGRAM_TITLE = "Telegram";
 export const CONTACT_TELEGRAM = "@Fe-56";
 export const CONTACT_PHONE_TITLE = "Phone Number";
-export const CONTACT_PHONE = "+65 9735 7695";
+export const CONTACT_PHONE = "0389385213";
 export const CONTACT_LOCATION_TITLE = "(Current) Location";
-export const CONTACT_LOCATION = "Singapore";
+export const CONTACT_LOCATION = "VietNam";
 
 // miscellaneous (used across pages)
 export const SKILL_FLUTTER = "Flutter";

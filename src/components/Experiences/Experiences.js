@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import pageLoad from "../utils/pageLoad";
 import "./Experiences.css";
-import * as textConst from "../../const/text";
-import Experience from "./Experience";
+// import * as textConst from "../../const/text";
+// import Experience from "./Experience";
 
 export default function Experiences() {
   useEffect(() => {
@@ -12,13 +12,13 @@ export default function Experiences() {
 
   return (
     <div id="experiences" class="container-fluid">
-      <h1 id="experiences_title">{textConst.EXPERIENCES_TITLE}</h1>
+      {/* <h1 id="experiences_title">{textConst.EXPERIENCES_TITLE}</h1>
       <Experience.DBS2 />
       <Experience.SmileTutor />
       <Experience.MyExpoPlace />
       <Experience.CoffeeSpace />
       <Experience.HDB />
-      <Experience.DBS />
+      <Experience.DBS /> */}
     </div>
   );
 }

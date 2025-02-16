@@ -17,7 +17,6 @@ export default function Hobbies() {
       <Hobby.Running />
       <Hobby.Guitar />
       <Hobby.Netflix />
-      <Hobby.Coding />
     </div>
   );
 }

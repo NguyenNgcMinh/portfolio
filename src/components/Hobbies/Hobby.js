@@ -1,7 +1,8 @@
 import React from "react";
-import cycling_1 from "./cycling_1.jpg";
-import cycling_2 from "./cycling_2.jpg";
-import running from "./running.jpg";
+import gym_1 from "./gymm.png";
+import gym_2 from "./gymm2.jpg";
+import cooking from "./cookking.jpg";
+import music from "./music.jpg";
 import * as textConst from "../../const/text";
 import * as urlConst from "../../const/url";
 import Icon from "../../const/icons";
@@ -9,29 +10,26 @@ import Icon from "../../const/icons";
 const Cycling = () => {
   return (
     <div id="road_cycling" class="hobby">
-      <Icon.HobbyHeading hobbyName="cycling" />
+      <Icon.HobbyHeading hobbyName="gym" />
       <p class="text-start description">
         {textConst.HOBBIES_CYCLING_DESCRIPTION}
       </p>
       <div id="cycling_images">
-        <img
-          src={cycling_1}
-          loading="lazy"
-          alt="Cycling picture 1"
-          id="cycling_picture_1"
-          class="image"
-        ></img>
-        <img
-          src={cycling_2}
-          loading="lazy"
-          alt="Cycling picture 2"
-          id="cycling_picture_2"
-          class="image"
-        ></img>
-      </div>
-      <div class="hobby_end">
-        <Icon.HobbyLinkIcon hobbyName="cycling" />
-      </div>
+  <img
+    src={gym_1}
+    loading="lazy"
+    alt="Cycling 1"
+    id="cycling_picture_1"
+    className="image"
+  />
+  <img
+    src={gym_2}
+    loading="lazy"
+    alt="Cycling 2"
+    id="cycling_picture_2"
+    className="image"
+  />
+</div>
     </div>
   );
 };
@@ -39,22 +37,21 @@ const Cycling = () => {
 const Running = () => {
   return (
     <div id="running" class="hobby">
-      <Icon.HobbyHeading hobbyName="running" />
+      <Icon.HobbyHeading hobbyName="cooking" />
       <p class="text-start description">
         {textConst.HOBBIES_RUNNING_DESCRIPTION}
       </p>
       <div id="running_images">
-        <img
-          src={running}
-          loading="lazy"
-          alt="Running picture"
-          id="running_picture"
-          class="image"
-        ></img>
+      <img
+  src={cooking}
+  loading="lazy"
+  alt="Running"
+  id="running_picture"
+  className="image"
+/>
+
       </div>
-      <div class="hobby_end">
-        <Icon.HobbyLinkIcon hobbyName="running" />
-      </div>
+     
     </div>
   );
 };
@@ -62,36 +59,21 @@ const Running = () => {
 const Guitar = () => {
   return (
     <div id="electric_guitar" class="hobby">
-      <Icon.HobbyHeading hobbyName="guitar" />
+      <Icon.HobbyHeading hobbyName="music" />
       <p class="text-start description">
         {textConst.HOBBIES_GUITAR_DESCRIPTION}
       </p>
       <div id="guitarist_images">
-        <img
-          src={urlConst.HOBBIES_GUITAR_LINKIN_PARK_PICTURE_URL}
+         <img
+          src={music}
           loading="lazy"
           alt="Brad Delson"
           id="brad_delson_picture"
           class="image"
         ></img>
-        <img
-          src={urlConst.HOBBIES_GUITAR_METALLICA_PICTURE_URL}
-          loading="lazy"
-          alt="James Hetfield and Kirk Hammet"
-          id="james_hetfield_and_kirk_hammet_picture"
-          class="image"
-        ></img>
-        <img
-          src={urlConst.HOBBIES_GUITAR_GREEN_DAY_PICTURE_URL}
-          loading="lazy"
-          alt="Billie Joe Armstrong"
-          id="bille_joe_armstrong_picture"
-          class="image"
-        ></img>
+       
       </div>
-      <div class="hobby_end">
-        <Icon.HobbyLinkIcon hobbyName="guitar" />
-      </div>
+     
     </div>
   );
 };
@@ -123,26 +105,11 @@ const Netflix = () => {
   );
 };
 
-const Coding = () => {
-  return (
-    <div id="building_cool_stuff" class="hobby">
-      <Icon.HobbyHeading hobbyName="coding" />
-      <p class="text-start description">
-        {textConst.HOBBIES_CODING_DESCRIPTION}
-      </p>
-      <div class="hobby_end">
-        <Icon.HobbyLinkIcon hobbyName="coding" />
-      </div>
-    </div>
-  );
-};
-
 const Hobby = {
   Cycling,
   Running,
   Guitar,
   Netflix,
-  Coding,
 };
 
 export default Hobby;
